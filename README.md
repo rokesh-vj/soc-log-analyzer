@@ -1,53 +1,61 @@
-# SOC Log Analyzer & Threat Detection Tool
+SOC Log Analyzer & Threat Detection Tool
 
-This project simulates a basic Security Operations Center (SOC) detection tool that analyzes system log files and identifies suspicious activities such as brute force login attempts and malicious command execution.
+Overview
 
-The tool is built using Python and runs in a Linux environment.
+The SOC Log Analyzer is a Python-based security tool that analyzes Linux log files and detects suspicious activities such as brute force login attempts and malicious command execution.
 
----
+This project simulates a basic Security Operations Center (SOC) detection workflow and maps detected activities to MITRE ATT&CK techniques.
 
-## Features
-
-• Detects multiple failed login attempts (possible brute-force attack)  
-• Detects suspicious command executions (wget, curl, nc)  
-• Generates SOC-style alert messages  
-• Maps detected activities to MITRE ATT&CK techniques  
-• Automatically generates a SOC alert report file  
+The tool reads log files, identifies suspicious patterns, and generates a SOC-style alert report.
 
 ---
 
-## Technologies Used
+Features
 
-Python  
-Linux (Kali)  
-Regular Expressions (Regex)  
-MITRE ATT&CK Framework  
-
----
-
-## MITRE ATT&CK Mapping
-
-Brute Force Attack → T1110  
-Command Execution → T1059  
+- Detects multiple failed login attempts (possible brute force attack)
+- Detects suspicious command executions (wget, curl, nc)
+- Maps detected activities to MITRE ATT&CK techniques
+- Generates SOC-style alert messages
+- Automatically creates a SOC alert report file
 
 ---
 
-## Project Structure
+Technologies Used
 
-soc-log-analyzer
+- Python
+- Linux Logs
+- MITRE ATT&CK Framework
+
+---
+
+Project Structure
+
+soc-log-analyzer/
 │
-├── analyzer.py
-├── sample_logs.txt
-├── soc_alert_report.txt
-├── execution.png
-├── script.png
-├── report.png
+├── analyzer.py              # Main SOC detection script
+├── sample_logs.txt          # Sample log file for testing
+├── soc_alert_report.txt     # Generated alert report
+│
+├── screenshots/
+│   ├── script.png
+│   ├── execution.png
+│   └── report.png
+│
+└── README.md
 
 ---
 
-## How to Run
+How to Run
 
-Run the following command in Linux terminal:
+1. Clone the repository
+
+git clone https://github.com/rokesh-vj/soc-log-analyzer.git
+
+2. Navigate to the project folder
+
+cd soc-log-analyzer
+
+3. Run the analyzer
 
 python3 analyzer.py
 
@@ -55,17 +63,42 @@ The tool will analyze the log file and generate alerts if suspicious activity is
 
 ---
 
-## Example Alerts
+Tool Execution
 
-[ALERT] Suspicious Command Detected  
+Script
+
+"Script" (script.png)
+
+Execution Output
+
+"Execution" (execution.png)
+
+Generated Report
+
+"Report" (report.png)
+
+---
+
+Example Alerts
+
+[ALERT] Suspicious Command Detected
 MITRE Technique: T1059 (Command Execution)
 
-[ALERT] Possible Brute Force Attack  
+[ALERT] Possible Brute Force Attack
 MITRE Technique: T1110 (Brute Force)
 
 ---
 
-## Author
+Future Improvements
 
-Rokesh VJ  
+- Real-time log monitoring
+- Integration with SIEM platforms
+- Email or Slack alert notifications
+- IP reputation checking using threat intelligence APIs
+
+---
+
+Author
+
+Rokesh Kumar V
 Cybersecurity Enthusiast | SOC Analyst Aspirant
