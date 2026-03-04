@@ -1,4 +1,4 @@
-SOC Log Analyzer & Threat Detection Tool
+#SOC Log Analyzer & Threat Detection Tool
 
 Overview
 
