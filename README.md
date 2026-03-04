@@ -96,15 +96,15 @@ cat soc_alert_report.txt
 
 ## Tool Execution (Screenshots)
 
-Script
+1. Script
 
 Screenshot showing the Python detection script.
 
-Execution
+2. Execution
 
 Screenshot showing the tool running in Linux terminal.
 
-Alert Report
+3. Alert Report
 
 Screenshot showing generated SOC alert report.
 
@@ -132,4 +132,5 @@ MITRE Technique: T1110 (Brute Force)
 ## Author
 
 Rokesh Kumar V 
+
 Cybersecurity Enthusiast | SOC Analyst Aspirant
